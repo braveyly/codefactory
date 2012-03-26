@@ -1,0 +1,24 @@
+DATA SEGMENT
+DATA ENDS
+
+CODE SEGMENT
+     ASSUME CS:CODE, DS:DATA
+START: MOV AX,DATA
+       MOV DS,AX
+       MOV DH,02H
+       MOV DL,03H
+       CALL SUBR
+       MOV AH,4CH
+       INT 21H
+SUBR   PROC
+       MOV AL, DH
+       AND AL, 0FH
+       MOV AH,10
+       MUL AH
+       MOV AH,DL
+       AND AH,0FH
+       ADD AL,AH
+       RET
+SUBR   ENDP
+CODE ENDS
+     END START

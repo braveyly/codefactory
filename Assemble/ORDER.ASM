@@ -1,0 +1,32 @@
+DSEG SEGMENT
+   BUFFER DB 81,89,12
+DSEG ENDS
+
+CSEG SEGMENT
+   ASSUME CS:CSEG,DS:DSEG
+START:MOV AX,DSEG
+      MOV DS,AX
+      
+      MOV SI,OFFSET BUFFER
+      MOV AL,[SI]
+      MOV BL,[SI+1]
+      MOV CL,[SI+2]
+
+      CMP AL,BL
+      JAE NEXT1
+      XCHG AL,BL
+NEXT1:CMP AL,CL
+      JAE NEXT2
+      XCHG AL,CL
+NEXT2:CMP BL,CL
+      JAE NEXT3
+      XCHG BL,CL
+NEXT3:MOV [SI],AL
+      MOV [SI+1],BL
+      MOV [SI+2],CL
+      MOV AH,4CH
+      INT 21H
+CSEG ENDS
+     END START
+      
+         
