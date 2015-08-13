@@ -1,0 +1,59 @@
+1.获取代码
+
+svn co svn://172.16.0.254/biad/gct/models/wm5130 --username nick.li --password nick.li --revision 18
+
+
+2.提交代码
+
+svn ci -m"" filepath dirpath
+
+
+3.增加文件或文件夹
+
+svn add filepath/dirpath
+
+
+4.删除文件或文件夹
+
+svn rm filepath/dirpath
+
+
+5.显示行级代码区别
+
+svn diff filepath/dirpath -r revisionnum1：revisionnum2
+
+
+6.显示文件及区别
+
+svn log -r revisionnum -v 
+
+
+7.比较本地及某个revision
+
+svn st -q -r revisionnum
+
+
+8.删除多出来的文件，恢复成svn服务器上最原始版本（M类的文件也会删除，使修改丢失）
+
+rm -f `svn st | awk '{print $2}'`
+
+
+9.移植其他svn上的文件夹
+
+rm -f .*
+rm -rf .svn
+svn add dirpath
+svn ci -m"" dirpath
+
+
+10.当出现无法添加文件夹时
+
+mv hello hello_bak
+svn rm hello
+mv hello_bak hello
+svn add hello
+
+
+11.批量删除svn文件夹
+
+find ./ -name "*svn*" | xargs /bin/rm -r

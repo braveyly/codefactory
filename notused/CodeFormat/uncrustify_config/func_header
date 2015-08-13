@@ -1,0 +1,9 @@
+/*
+ * Function: int main(int argc, char args[])
+ * Description: process main function
+ * Input:  argc: parameter number 
+ *         args: parameter value array     
+ * Output: none
+ * Return: function exit status
+ * Others: none
+ */

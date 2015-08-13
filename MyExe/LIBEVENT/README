@@ -1,0 +1,11 @@
+Set the event shared lib path: export LD_LIBRARY_PATH=absolute path of libevent.so
+
+Test methods:
+(1)signal_test
+kill -SIGINT PID
+
+(2)event_test
+echo 123 > event.fifo
+
+(3)echosrc_buffered
+telnet localhost 5555

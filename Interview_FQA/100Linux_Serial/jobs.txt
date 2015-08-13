@@ -1,0 +1,32 @@
+> jobs
+> cat > liwei						//cat等待终端的标准输入，并将结果重定向到文件liwei中
+^Z							//ctrl + Z,将前台进程挂起到后台
+[1]+  Stopped                 cat > liwei
+> jobs
+[1]+  Stopped                 cat > liwei
+> cat > lijing						//运行前台进程
+^Z
+[2]+  Stopped                 cat > lijing
+> 
+> cat > beijing &					//运行后台进程
+[3] 24934
+> jobs
+[1]   Stopped                 cat > liwei
+[2]-  Stopped                 cat > lijing
+[3]+  Stopped                 cat > beijing
+> fg %2							//将2号后台进程调到前台运行
+cat > lijing
+^C							//ctrl + C,强行终止一个正在前台运行的进程
+> jobs
+[1]-  Stopped                 cat > liwei
+[3]+  Stopped                 cat > beijing
+> bg %3							//将挂起的3号后台进程重新启动，并运行
+[3]+ cat > beijing &
+> jobs
+[1]-  Stopped                 cat > liwei
+[3]+  Stopped                 cat > beijing
+> fg %1
+cat > liwei						//ctrl + D，正常终止一个前台进程
+> jobs
+[3]+  Stopped                 cat > beijing
+>stty tostop						//禁止后台作用输出至控制终端

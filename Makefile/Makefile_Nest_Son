@@ -1,0 +1,67 @@
+#Please Set Following Parameters#
+#1.exe file name
+EXENAME:=command
+
+#2.source file directory, allow multiple ones
+SRCDIRS:=.        
+
+#3.complier command and flags
+CC:=$(CC)                   
+CFLAGS:=$(CFLAGS)
+
+#4.linkage command and flags
+LD:=$(LD)
+LDFLAGS:=$(LDFLAGS)
+
+#5.depend flags
+DEPENDFLAG:=$(DEPENDFLAG)
+
+#6.exterior hender and lib files 
+INCLUDES:=$(INCLUDES)
+LIBS:=$(LIBS)
+
+#7.source file suffix
+SUFFIX:=$(SUFFIX)
+
+#8.nest directory
+NESTDIR:=
+
+SRCS:=$(foreach dir,$(SRCDIRS),$(wildcard $(dir)/*.$(SUFFIX)))
+BJS:=$(SRCS:.$(SUFFIX)=.o)
+DEPENDS:=$(SRCS:.$(SUFFIX)=.d)
+
+define NEST_MAKE
+@for entry in $(NESTDIR);\
+        do \
+        make -C $$entry;\
+        done
+endef
+
+define NEST_CLEAN
+@for entry in $(NESTDIR);\
+	do \
+	make clean -C $$entry;\
+	done
+endef
+
+all:$(EXENAME) NEST
+
+$(EXENAME):$(BJS)
+	$(LD) $(INCLUDES) $(LIBS) $(LDFLAGS) $? -o $@
+
+NEST:
+	$(NEST_MAKE)
+
+%.d:%.$(SUFFIX)
+	rm -f $@; \
+	$(CC) $(DEPENDFLAG) $< >$@.$$$$; \
+	sed 's,\($*\)\.o[:]*,\1.o $@ :,g' < $@.$$$$ > $@;\
+	rm -f $@.$$$$
+
+
+include $(DEPENDS)
+
+.PHONY:clean
+clean:
+	-rm -f *.o *.d* $(EXENAME)
+	$(NEST_CLEAN)
