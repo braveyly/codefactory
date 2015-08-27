@@ -1,0 +1,19 @@
+#! /bin/bash
+#svn revision 100
+cd /home/nick/alllibs/confact/
+cp *.h /home/nick/alllibs/include
+
+cd /home/nick/alllibs/conflib
+cp *.h /home/nick/alllibs/include
+
+cd /home/nick/alllibs/confral
+cp *.h /home/nick/alllibs/include
+
+cd /home/nick/alllibs/libmsg/
+cp *.h  /home/nick/alllibs/include
+
+cd /home/nick/alllibs/liboal
+cp *.h  /home/nick/alllibs/include
+
+cd /home/nick/alllibs/sched
+cp *.h /home/nick/alllibs/include

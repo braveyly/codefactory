@@ -1,0 +1,11 @@
+CFLAGS=-I./ -I$(ROOTDIR)/include -I$(ROOTDIR)/include/liboal -DTCM_LOG3
+INCLUDES= $(CFLAGS)
+LDFLAGS+=-L$(ROOTDIR)/lib -L$(ROOTDIR)/lib/liboal -L$(ROOTDIR)/lib/libmsg -loal -lconfapi 
+
+all:
+	${CC} $(INCLUDES) $(LDFLAGS) -o test -Wall test.c 
+	${CC} $(INCLUDES) $(LDFLAGS) -Wall test1.c -o test_thread 
+
+clean:
+	rm -f *.o test test_thread
+

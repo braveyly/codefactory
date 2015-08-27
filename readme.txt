@@ -50,8 +50,10 @@ makefile脚本的常规用法
 HTTP客户端C语言API代码
 
 18、InteligenceHomeSystem
+智能家居代码
 
-19、zwave
+19、DB_MSG_ProcessManage
+共享内存数据库、消息通信、进程管理
 
 20、
 

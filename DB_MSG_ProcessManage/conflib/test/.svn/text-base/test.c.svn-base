@@ -1,0 +1,339 @@
+/**********************************************************************
+ Copyright (c) 2009 Wuhan Tecom Co., Ltd.
+ All Rights Reserved
+ No portions of this material may be reproduced in any form without the
+ written permission of:
+   Wuhan Tecom Co., Ltd.
+   #18, Huaguang Road
+   Wuhan, PR China 430074
+ All information contained in this document is Wuhan Tecom Co., Ltd.
+ company private, proprietary, and trade secret.
+***********************************************************************
+ Filename:    test.c
+ Author:      Mark Yan
+ Date:        2009-03-19
+ Description:
+
+ Histroy:
+    1.  Modification:
+        Author:
+        Date:
+
+    2.
+***********************************************************************/
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include <tcm.h>
+#include "conflib.h"
+#include "configapi.h"
+
+static char *args[] =
+{
+    "  test read app paramete\n",
+    "  test write app parameter parameter_val\n",
+    "  test readtable app row parameter\n",
+    "  test readtablegroup app row\n",
+    "  test writetable app row parameter val\n",
+    "  test addtable app row val1 val2 ...\n",
+    "  test deltable app row\n",
+    "  test show app\n",
+    "  test dump\n",
+    "  test cat\n",
+    "  test release\n\n",
+    "  [app]: application number in os.conf start with 1\n",
+    "  [parameter]: para in app, the first is 1, second is 2 ...\n",
+    "  [row]: row in app, contains parameter, the first is 1, second is 2 ...\n",
+    "  Example: test read 1 1\n",
+};
+
+void print_args ( void )
+{
+    char   *p;
+    int    i = 0;
+
+    for ( p = args[0]; i < sizeof ( args ) / sizeof ( char * ); p = args[++i] )
+        printf ( "%s", p );
+
+    return;
+}
+
+void print_app_args ( char **result )
+{
+    int i = 0;
+
+
+    while ( i < 100 && *result[i] != '\0' )
+    {
+        printf ( "%s\n", result[i++] );
+    }
+
+
+
+}
+
+int main ( int argc, char *argv[] )
+{
+    int      app_index, para_index, row_index;
+    char     result[MAX_VALUE_LEN];
+    int      ret = -1;
+    char     tmp[128];
+
+    int i = 0;
+    char   app_result[100][MAX_VALUE_LEN];
+    char     *p_result[100];
+    for ( i = 0; i < 100; i++ )
+    {
+        app_result[i][0] = '\0';
+        p_result[i] = app_result[i];
+    }
+
+    if ( argc > 1 && strcmp ( argv[1], "addtable" ) == 0 )
+    {
+        if ( ( ret = config_api_init_library() ) < 0 )
+        {
+            return -1;
+        }
+
+        app_index = atoi ( argv[2] );
+        row_index = atoi ( argv[3] );
+
+        ret = config_api_add_table_row ( app_index,row_index, &argv[4] );
+        if ( ret == -1 )
+        {
+            printf ( "Error, config_api_add_table_row return -1.\n" );
+            config_api_uninit_library ( );
+            return -1;
+        }
+        config_api_write_to_flash (app_index);
+        config_api_uninit_library ( );
+        printf ( "Add table successfully\n" );
+    }
+    else
+    {
+        switch ( argc )
+        {
+            case 2:
+                if ( strcmp ( argv[1], "dump" ) == 0 )
+                {
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    dump_para_table();
+                    config_api_uninit_library ( );
+                }
+                else if ( strcmp ( argv[1], "release" ) == 0 )
+                {
+                    if ( config_api_release_library() == 0 )
+                    {
+                        printf ( "Release the cache space success! \n" );
+                    }
+                    else
+                    {
+                        printf ( "Fail to release the cache space\n" );
+                    }
+                }
+                else if ( strcmp ( argv[1], "cat" ) == 0 )
+                {
+                    sprintf ( tmp, "cat %s", PARAMETER_FILE );
+                    system ( tmp );
+                }
+                else
+                {
+                    print_args ();
+                }
+                break;
+            case 3:
+                if ( strcmp ( argv[1], "show" ) == 0 )
+                {
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    app_index = atoi ( argv[2] );
+                    for ( i = 1; ; i++ )
+                    {
+                        ret = config_api_read_parameter ( app_index, i, result );
+                        if ( ret )
+                        {
+                            if ( i == 1 )
+                            {
+                                printf ( "Can not find that ID\n" );
+                            }
+                            config_api_uninit_library ( );
+                            return -1;
+                        }
+                        else
+                        {
+                            printf ( "%d = %s\n", i, result );
+                        }
+                    }
+                    config_api_uninit_library ( );
+
+                }
+                else
+                {
+                    print_args ();
+                }
+                break;
+            case 4:
+                if ( strcmp ( argv[1], "read" ) == 0 )
+                {
+                    app_index = atoi ( argv[2] );
+                    para_index = atoi ( argv[3] );
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    ret = config_api_read_parameter ( app_index, para_index, result );
+
+                    if ( ret == -1 )
+                    {
+                        printf ( "Error, config_api_read_parameter return -1.\n" );
+                        config_api_uninit_library ( );
+                        return -1;
+                    }
+                    printf ( "%s\n", result );
+                    config_api_uninit_library ( );
+                }
+                else if ( strcmp ( argv[1], "deltable" ) == 0 )
+                {
+                    app_index = atoi ( argv[2] );
+                    row_index = atoi ( argv[3] );
+
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    ret = config_api_delete_table_row ( app_index, row_index );
+                    if ( ret == -1 )
+                    {
+                        printf ( "Error, config_api_delete_table_row return -1.\n" );
+                        config_api_uninit_library ( );
+                        return -1;
+                    }
+                    printf ( " Delete the table successfully\n" );
+                    config_api_write_to_flash (app_index);
+                    config_api_uninit_library ( );
+
+                }
+                else if ( strcmp ( argv[1], "readtablegroup" ) == 0 )
+                {
+                    app_index = atoi ( argv[2] );
+                    row_index = atoi ( argv[3] );
+
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    ret = config_api_read_table_row ( app_index, row_index, p_result );
+
+                    if ( ret )
+                    {
+                        printf ( "Fail to read table group\n" );
+                        config_api_uninit_library ( );
+                        return -1;
+                    }
+                    print_app_args ( p_result );
+                    config_api_uninit_library ( );
+                }
+                else
+                    print_args();
+                break;
+            case 5:
+                if ( strcmp ( argv[1], "readtable" ) == 0 )
+                {
+                    app_index = atoi ( argv[2] );
+                    row_index = atoi ( argv[3] );
+                    para_index = atoi ( argv[4] );
+
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    ret = config_api_read_table_parameter ( app_index, row_index, para_index, result );
+                    if ( ret == -1 )
+                    {
+                        printf ( "Error, config_api_read_table_parameter return -1.\n" );
+                        config_api_uninit_library ( );
+                        return -1;
+                    }
+                    printf ( "%d = %s\n", para_index, result );
+
+                    config_api_uninit_library ( );
+                }
+                else if ( strcmp ( argv[1], "write" ) == 0 )
+                {
+                    app_index = atoi ( argv[2] );
+                    para_index = atoi ( argv[3] );
+
+                    if ( ( ret = config_api_init_library() ) < 0 )
+                    {
+                        return -1;
+                    }
+
+                    ret = config_api_write_parameter ( app_index, para_index, argv[4] );
+                    if ( ret == -1 )
+                    {
+                        printf ( "Error, config_api_write_parameter return -1.\n" );
+                        config_api_uninit_library ( );
+                        return -1;
+                    }
+                    printf ( "Write the parameter successfully\n" );
+                    config_api_write_to_flash (app_index);
+
+                    config_api_uninit_library ( );
+                }
+                else
+                    print_args();
+                break;
+
+            case 6:
+                if ( strcmp ( argv[1], "writetable" ) )
+                {
+                    print_args();
+                    return -1;
+                }
+                app_index = atoi ( argv[2] );
+                row_index = atoi ( argv[3] );
+                para_index = atoi ( argv[4] );
+
+                if ( ( ret = config_api_init_library() ) < 0 )
+                {
+                    return -1;
+                }
+
+                ret = config_api_write_table_parameter ( app_index, row_index, para_index, argv[5] );
+                if ( ret == -1 )
+                {
+                    printf ( "Error, config_api_write_table_parameter return -1.\n" );
+                    config_api_uninit_library ( );
+                    return -1;
+                }
+
+                config_api_write_to_flash (app_index);
+                printf ( "Write table parameter successfully\n" );
+
+                config_api_uninit_library ( );
+                break;
+
+            default:
+                print_args();
+                break;
+        }
+    }
+
+    return 0;
+}
+
