@@ -1,0 +1,1689 @@
+<InternetGatewayDevice. type="Object" nextLevelNum="15">
+
+	<InternetGatewayDevice.DeviceConfig. type="Object" nextLevelNum="2">
+	
+		<InternetGatewayDevice.DeviceConfig.ConfigFile type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-32768" defaultValue="tecomtech config file" />
+		
+		<InternetGatewayDevice.DeviceConfig.PersistentData type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="123456" />
+		
+	</InternetGatewayDevice.DeviceConfig.>
+	
+	<InternetGatewayDevice.DeviceInfo. type="Object" nextLevelNum="16">
+	
+		<InternetGatewayDevice.DeviceInfo.Description type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="tecom cpe" />
+		
+		<InternetGatewayDevice.DeviceInfo.DeviceLog type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-32768" defaultValue="device log" />
+		
+		<InternetGatewayDevice.DeviceInfo.FirstUseDate type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+		<InternetGatewayDevice.DeviceInfo.HardwareVersion type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="1.0" />
+		
+		<InternetGatewayDevice.DeviceInfo.Manufacturer type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="tecom" />
+		
+		<InternetGatewayDevice.DeviceInfo.ManufacturerOUI type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="6-6" defaultValue="123456" />
+		
+		<InternetGatewayDevice.DeviceInfo.ModelName type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="tcmAgent" />
+		
+		<InternetGatewayDevice.DeviceInfo.ModemFirmwareVersion type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="1.0" />
+		
+		<InternetGatewayDevice.DeviceInfo.ProductClass type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="tcmCPE" />
+		
+		<InternetGatewayDevice.DeviceInfo.ProvisioningCode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="TECO" />
+		
+		<InternetGatewayDevice.DeviceInfo.SerialNumber type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="123456" />
+		
+		<InternetGatewayDevice.DeviceInfo.SoftwareVersion type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="1.0" />
+		
+		<InternetGatewayDevice.DeviceInfo.SpecVersion type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-16" defaultValue="1.0" />
+		
+		<InternetGatewayDevice.DeviceInfo.UpTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0. type="Instance" nextLevelNum="4" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0.Date type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+				
+				<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0.Description type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="tecomCPE configuration" />
+				
+				<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0.Name type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="tecomCPE" />
+				
+				<InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0.Version type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-16" defaultValue="1.0" />
+				
+			</InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.0.>
+			
+		</InternetGatewayDevice.DeviceInfo.Vendor-ConfigFile.>
+		
+		<InternetGatewayDevice.DeviceInfo.VendorConfigFileNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+	</InternetGatewayDevice.DeviceInfo.>
+	
+	<InternetGatewayDevice.DeviceSummary type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-1024" defaultValue="tecom CPE" />
+	
+	<InternetGatewayDevice.IPPingDiagnostics. type="Object" nextLevelNum="12">
+	
+		<InternetGatewayDevice.IPPingDiagnostics.AverageResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.DSCP type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-63" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.DataBlockSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="128" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.DiagnosticsState type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="None" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.FailureCount type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.Host type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.Interface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.MaximumResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.MinimumResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.NumberOfRepetitions type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="5" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.SuccessCount type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.IPPingDiagnostics.Timeout type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="10" />
+		
+	</InternetGatewayDevice.IPPingDiagnostics.>
+	
+	<InternetGatewayDevice.LANConfigSecurity. type="Object" nextLevelNum="1">
+	
+		<InternetGatewayDevice.LANConfigSecurity.ConfigPassword type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="123456" />
+		
+	</InternetGatewayDevice.LANConfigSecurity.>
+	
+	<InternetGatewayDevice.LANDevice. type="MultiObject" nextLevelNum="1">
+	
+		<InternetGatewayDevice.LANDevice.0. type="Instance" nextLevelNum="8" maxNumOfEntries="65535">
+		
+			<InternetGatewayDevice.LANDevice.0.Hosts. type="Object" nextLevelNum="2">
+			
+				<InternetGatewayDevice.LANDevice.0.Hosts.Host. type="MultiObject" nextLevelNum="1">
+				
+					<InternetGatewayDevice.LANDevice.0.Hosts.Host.0. type="Instance" nextLevelNum="7" maxNumOfEntries="65535">
+					
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.Active type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.AddressSource type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Static" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.HostName type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-64" defaultValue="host" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.IPAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="192.168.1.2" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.InterfaceType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Ethernet" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.LeaseTimeRemaining type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="-1-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.Hosts.Host.0.MACAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="11:11:11:33:44:55" />
+						
+					</InternetGatewayDevice.LANDevice.0.Hosts.Host.0.>
+					
+				</InternetGatewayDevice.LANDevice.0.Hosts.Host.>
+				
+				<InternetGatewayDevice.LANDevice.0.Hosts.HostNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+			</InternetGatewayDevice.LANDevice.0.Hosts.>
+			
+			<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig. type="MultiObject" nextLevelNum="1">
+			
+				<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0. type="Instance" nextLevelNum="7" maxNumOfEntries="65535">
+				
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.DuplexMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Auto" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.MACAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.MACAddressControlEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.MaxBitRate type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="1000" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats. type="Object" nextLevelNum="4">
+					
+						<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats.BytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats.BytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats.PacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats.PacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+					</InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Stats.>
+					
+					<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+					
+				</InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.0.>
+				
+			</InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceConfig.>
+			
+			<InternetGatewayDevice.LANDevice.0.LANEthernetInterfaceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+			
+			<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement. type="Object" nextLevelNum="18">
+			
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.AllowedMACAddresses type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.AssociatedConnection type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DHCPLeaseTime type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65536" defaultValue="3600" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DHCPRelay type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DHCPServerConfigurable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DHCPServerEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DNSServers type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.DomainName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface. type="MultiObject" nextLevelNum="1">
+				
+					<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0. type="Instance" nextLevelNum="4" maxNumOfEntries="65535">
+					
+						<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0.IPInterfaceAddressingType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="DHCP" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0.IPInterfaceIPAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0.IPInterfaceSubnetMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+						
+					</InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.0.>
+					
+				</InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterface.>
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPInterfaceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.IPRouters type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.MaxAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.MinAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.PassthroughLease type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.PassthroughMACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.ReservedAddresses type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.SubnetMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.UseAllocatedWAN type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Normal" />
+				
+			</InternetGatewayDevice.LANDevice.0.LANHostConfigManagement.>
+			
+			<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig. type="MultiObject" nextLevelNum="1">
+			
+				<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0. type="Instance" nextLevelNum="9" maxNumOfEntries="65535">
+				
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.MACAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.MACAddressControlEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Power type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Unknown" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Rate type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Full" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Standard type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="USB2.0" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats. type="Object" nextLevelNum="4">
+					
+						<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats.BytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats.BytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats.CellsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats.CellsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+					</InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Stats.>
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+					
+					<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.Type type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Device" />
+					
+				</InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.0.>
+				
+			</InternetGatewayDevice.LANDevice.0.LANUSBInterfaceConfig.>
+			
+			<InternetGatewayDevice.LANDevice.0.LANUSBInterfaceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+			
+			<InternetGatewayDevice.LANDevice.0.LANWLANConfigurationNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+			
+			<InternetGatewayDevice.LANDevice.0.WLANConfiguration. type="MultiObject" nextLevelNum="1">
+			
+				<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0. type="Instance" nextLevelNum="43" maxNumOfEntries="65535">
+				
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice. type="MultiObject" nextLevelNum="1">
+					
+						<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0. type="Instance" nextLevelNum="6" maxNumOfEntries="65536">
+						
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.AssociatedDeviceAuthenticationState type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.AssociatedDeviceIPAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-64" defaultValue="" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.AssociatedDeviceMACAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.LastPMKId type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="0" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.LastRequestedMulticastCipher type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.LastRequestedUnicastCipher type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+							
+						</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.0.>
+						
+					</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AssociatedDevice.>
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AuthenticationServiceMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="None" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.AutoRateFallBackEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BSSID type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BasicAuthenticationMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="None" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BasicDataTransmitRates type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="1000" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BasicEncryptionModes type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="None" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BeaconAdvertisementEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.BeaconType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="None" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.Channel type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-255" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.ChannelsInUse type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-1024" defaultValue="0-0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.DeviceOperationMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="InfrastructureAccessPoint" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.DistanceFromRoot type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.IEEE11iAuthenticationMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="PSKAuthentication" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.IEEE11iEncryptionModes type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="WEPEncryption" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.InsecureOOBAccessEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.KeyPassphrase type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-63" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.LocationDescription type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-4096" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.MACAddressControlEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.MaxBitRate type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-4" defaultValue="Auto" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.OperationalDataTransmitRates type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="11" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PeerBSSID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PossibleChannels type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-1024" defaultValue="0-0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PossibleDataTransmitRates type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="1" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey. type="MultiObject" nextLevelNum="1">
+					
+						<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.0. type="Instance" nextLevelNum="3" maxNumOfEntries="10">
+						
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.0.AssociatedDeviceMACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.0.KeyPassphrase type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-63" defaultValue="" />
+							
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.0.PreSharedKey type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+							
+						</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.0.>
+						
+					</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.PreSharedKey.>
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.RadioEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.RegulatoryDomain type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-3" defaultValue="I" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.SSID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-32" defaultValue="" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.Standard type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="USB2.0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalAssociations type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalBytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalBytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalIntegrityFailures type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalPSKFailures type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalPacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.TotalPacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPEncryptionLevel type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="Disabled" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKey. type="MultiObject" nextLevelNum="1">
+					
+						<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKey.0. type="Instance" nextLevelNum="1" maxNumOfEntries="4">
+						
+							<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKey.0.WEPKey type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-128" defaultValue="" />
+							
+						</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKey.0.>
+						
+					</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKey.>
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WEPKeyIndex type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-4" defaultValue="1" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WPAAuthenticationMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="PSKAuthentication" />
+					
+					<InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.WPAEncryptionModes type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-31" defaultValue="WEPEncryption" />
+					
+				</InternetGatewayDevice.LANDevice.0.WLANConfiguration.0.>
+				
+			</InternetGatewayDevice.LANDevice.0.WLANConfiguration.>
+			
+		</InternetGatewayDevice.LANDevice.0.>
+		
+	</InternetGatewayDevice.LANDevice.>
+	
+	<InternetGatewayDevice.LANDeviceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+	
+	<InternetGatewayDevice.Layer2Bridging. type="Object" nextLevelNum="11">
+	
+		<InternetGatewayDevice.Layer2Bridging.AvailableInterface. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.Layer2Bridging.AvailableInterface.0. type="Instance" nextLevelNum="3" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.Layer2Bridging.AvailableInterface.0.AvailableInterfaceKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.AvailableInterface.0.InterfaceReference type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.AvailableInterface.0.InterfaceType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="LANInterface" />
+				
+			</InternetGatewayDevice.Layer2Bridging.AvailableInterface.0.>
+			
+		</InternetGatewayDevice.Layer2Bridging.AvailableInterface.>
+		
+		<InternetGatewayDevice.Layer2Bridging.AvailableInterfaceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.Bridge. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.Layer2Bridging.Bridge.0. type="Instance" nextLevelNum="5" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.Layer2Bridging.Bridge.0.BridgeEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Bridge.0.BridgeKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Bridge.0.BridgeName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Bridge.0.BridgeStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Bridge.0.VLANID type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-4094" defaultValue="0" />
+				
+			</InternetGatewayDevice.Layer2Bridging.Bridge.0.>
+			
+		</InternetGatewayDevice.Layer2Bridging.Bridge.>
+		
+		<InternetGatewayDevice.Layer2Bridging.BridgeNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.Filter. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.Layer2Bridging.Filter.0. type="Instance" nextLevelNum="26" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.AdmitOnlyVLANTagged type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACAddressFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACAddressFilterList type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-512" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromClientIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromClientIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromUserClassIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromUserClassIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromVendorClassIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.DestMACFromVendorClassIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.EthertypeFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.EthertypeFilterList type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.ExclusivityOrder type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.FilterBridgeReference type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.FilterEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.FilterInterface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="LANInterfaces" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.FilterKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.FilterStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACAddressFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACAddressFilterList type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-512" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromClientIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromClientIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromUserClassIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromUserClassIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromVendorClassIDFilter type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.SourceMACFromVendorClassIDFilterExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Filter.0.VLANIDFilter type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-4095" defaultValue="-1" />
+				
+			</InternetGatewayDevice.Layer2Bridging.Filter.0.>
+			
+		</InternetGatewayDevice.Layer2Bridging.Filter.>
+		
+		<InternetGatewayDevice.Layer2Bridging.FilterNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.Marking. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.Layer2Bridging.Marking.0. type="Instance" nextLevelNum="9" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.EthernetPriorityMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-7" defaultValue="-1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.EthernetPriorityOverride type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.MarkingBridgeReference type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.MarkingEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.MarkingInterface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.MarkingKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.MarkingStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.VLANIDMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-4095" defaultValue="-1" />
+				
+				<InternetGatewayDevice.Layer2Bridging.Marking.0.VLANIDUntag type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+			</InternetGatewayDevice.Layer2Bridging.Marking.0.>
+			
+		</InternetGatewayDevice.Layer2Bridging.Marking.>
+		
+		<InternetGatewayDevice.Layer2Bridging.MarkingNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.MaxBridgeEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.MaxFilterEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer2Bridging.MaxMarkingEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+	</InternetGatewayDevice.Layer2Bridging.>
+	
+	<InternetGatewayDevice.Layer3Forwarding. type="Object" nextLevelNum="3">
+	
+		<InternetGatewayDevice.Layer3Forwarding.DefaultConnectionService type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1" />
+		
+		<InternetGatewayDevice.Layer3Forwarding.ForwardNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.Layer3Forwarding.Forwarding. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.Layer3Forwarding.Forwarding.0. type="Instance" nextLevelNum="12" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.DestIPAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.DestSubnetMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.ForwardingMetric type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.ForwardingPolicy type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.GatewayIPAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.Interface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.MTU type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-1540" defaultValue="1540" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.SourceIPAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.SourceSubnetMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.Layer3Forwarding.Forwarding.0.Type type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Default" />
+				
+			</InternetGatewayDevice.Layer3Forwarding.Forwarding.0.>
+			
+		</InternetGatewayDevice.Layer3Forwarding.Forwarding.>
+		
+	</InternetGatewayDevice.Layer3Forwarding.>
+	
+	<InternetGatewayDevice.ManagementServer. type="Object" nextLevelNum="24">
+	
+		<InternetGatewayDevice.ManagementServer.ConnectionRequestPassword type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.ConnectionRequestURL type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.ConnectionRequestUsername type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.DownloadProgressURL type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.KickURL type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.ManufacturerOUI type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="tecom" />
+		
+		<InternetGatewayDevice.ManagementServer.NATDetected type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.ManagementServer.ParameterKey type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-32" defaultValue="123456" />
+		
+		<InternetGatewayDevice.ManagementServer.Password type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="tr069" />
+		
+		<InternetGatewayDevice.ManagementServer.PeriodicInformEnable type="Bool" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.ManagementServer.PeriodicInformInterval type="Unsigned" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-94608000" defaultValue="10" />
+		
+		<InternetGatewayDevice.ManagementServer.PeriodicInformTime type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNMaximumKeepAlivePeriod type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-660000" defaultValue="60000" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNMinimumKeepAlivePeriod type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-660000" defaultValue="10000" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNPassword type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-128" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNServerAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNServerPort type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-3600" defaultValue="3478" />
+		
+		<InternetGatewayDevice.ManagementServer.STUNUsername type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-128" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.UDPConnectionRequestAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.UDPConnectionRequestAddressNotificationLimit type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="1" />
+		
+		<InternetGatewayDevice.ManagementServer.URL type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.ManagementServer.UpgradesManaged type="Bool" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.ManagementServer.Username type="String" access="readWrite" notification="active" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="tr069" />
+		
+	</InternetGatewayDevice.ManagementServer.>
+	
+	<InternetGatewayDevice.QueueManagement. type="Object" nextLevelNum="22">
+	
+		<InternetGatewayDevice.QueueManagement.App. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.QueueManagement.App.0. type="Instance" nextLevelNum="10" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.QueueManagement.App.0.AppDefaultDSCPMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppDefaultEthernetPriorityMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppDefaultForwardingPolicy type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppDefaultPolicer type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppDefaultQueue type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppName type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.AppStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.QueueManagement.App.0.ProtocolIdentifier type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+			</InternetGatewayDevice.QueueManagement.App.0.>
+			
+		</InternetGatewayDevice.QueueManagement.App.>
+		
+		<InternetGatewayDevice.QueueManagement.AppNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.AvailableAppList type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-1024" defaultValue="" />
+		
+		<InternetGatewayDevice.QueueManagement.Classification. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.QueueManagement.Classification.0. type="Instance" nextLevelNum="64" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassApp type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassInterface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassPolicer type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassQueue type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassificationEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassificationKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassificationOrder type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ClassificationStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-65535" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DSAP type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DSAPExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DSCPCheck type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DSCPExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DSCPMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestClientID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestClientIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestIP type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestIPExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestMACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestMACExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestMACMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestPort type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestPortExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestPortRangeMax type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestUserClassID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestUserClassIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestVendorClassID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.DestVendorClassIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.EthernetPriorityCheck type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.EthernetPriorityExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.EthernetPriorityMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.Ethertype type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.EthertypeExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ForwardingPolicy type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.IPLengthExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.IPLengthMax type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.IPLengthMin type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.LLCControl type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.LLCControlExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.Protocol type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.ProtocolExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SNAPOUI type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SNAPOUIExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SSAP type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SSAPExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceClientID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceClientIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceIP type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceIPExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceMACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceMACExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceMACMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourcePort type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourcePortExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourcePortRangeMax type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceUserClassID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceUserClassIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceVendorClassID type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.SourceVendorClassIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.TCPACK type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.TCPACKExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.VLANIDCheck type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Classification.0.VLANIDExclude type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+			</InternetGatewayDevice.QueueManagement.Classification.0.>
+			
+		</InternetGatewayDevice.QueueManagement.Classification.>
+		
+		<InternetGatewayDevice.QueueManagement.ClassificationNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.DefaultDSCPMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+		
+		<InternetGatewayDevice.QueueManagement.DefaultEthernetPriorityMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+		
+		<InternetGatewayDevice.QueueManagement.DefaultForwardingPolicy type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.DefaultPolicer type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+		
+		<InternetGatewayDevice.QueueManagement.DefaultQueue type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.Flow. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.QueueManagement.Flow.0. type="Instance" nextLevelNum="12" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.QueueManagement.Flow.0.AppIdentifier type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowDSCPMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowEthernetPriorityMark type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-2-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowForwardingPolicy type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowPolicer type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowQueue type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Flow.0.FlowTypeParameters type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+			</InternetGatewayDevice.QueueManagement.Flow.0.>
+			
+		</InternetGatewayDevice.QueueManagement.Flow.>
+		
+		<InternetGatewayDevice.QueueManagement.FlowNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.MaxAppEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.QueueManagement.MaxClassificationEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.QueueManagement.MaxPolicerEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.QueueManagement.MaxQueueEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.QueueManagement.MaxQueues type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+		
+		<InternetGatewayDevice.QueueManagement.Policer. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.QueueManagement.Policer.0. type="Instance" nextLevelNum="15" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.QueueManagement.Policer.0.CommittedBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.CommittedRate type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.ConformingAction type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Null" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.CountedBytes type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.CountedPackets type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.ExcessBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.MeterType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="SimpleTokenBucket" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.NonConformingAction type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Drop" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PartialConformingAction type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Drop" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PeakBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PeakRate type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PolicerEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PolicerKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PolicerStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.QueueManagement.Policer.0.PossibleMeterTypes type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="SimpleTokenBucket" />
+				
+			</InternetGatewayDevice.QueueManagement.Policer.0.>
+			
+		</InternetGatewayDevice.QueueManagement.Policer.>
+		
+		<InternetGatewayDevice.QueueManagement.PolicerNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+		<InternetGatewayDevice.QueueManagement.Queue. type="MultiObject" nextLevelNum="1">
+		
+			<InternetGatewayDevice.QueueManagement.Queue.0. type="Instance" nextLevelNum="13" maxNumOfEntries="65535">
+			
+				<InternetGatewayDevice.QueueManagement.Queue.0.DropAlgorithm type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="DT" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueBufferLength type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueEnable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueInterface type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueKey type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueuePrecedence type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="1" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.QueueWeight type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.REDPercentage type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.REDThreshold type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.SchedulerAlgorithm type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="SP" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.ShapingBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.QueueManagement.Queue.0.ShapingRate type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+				
+			</InternetGatewayDevice.QueueManagement.Queue.0.>
+			
+		</InternetGatewayDevice.QueueManagement.Queue.>
+		
+		<InternetGatewayDevice.QueueManagement.QueueNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+		
+	</InternetGatewayDevice.QueueManagement.>
+	
+	<InternetGatewayDevice.Time. type="Object" nextLevelNum="11">
+	
+		<InternetGatewayDevice.Time.CurrentLocalTime type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+		<InternetGatewayDevice.Time.DaylightSavingsEnd type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+		<InternetGatewayDevice.Time.DaylightSavingsStart type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+		<InternetGatewayDevice.Time.DaylightSavingsUsed type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.Time.LocalTimeZone type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="+08:88" />
+		
+		<InternetGatewayDevice.Time.LocalTimeZoneName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="beijing" />
+		
+		<InternetGatewayDevice.Time.NTPServer1 type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="time.nist.gov" />
+		
+		<InternetGatewayDevice.Time.NTPServer2 type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="time.nist.gov" />
+		
+		<InternetGatewayDevice.Time.NTPServer3 type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="time.nist.gov" />
+		
+		<InternetGatewayDevice.Time.NTPServer4 type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="time.nist.gov" />
+		
+		<InternetGatewayDevice.Time.NTPServer5 type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="time.nist.gov" />
+		
+	</InternetGatewayDevice.Time.>
+	
+	<InternetGatewayDevice.UserInterface. type="Object" nextLevelNum="20">
+	
+		<InternetGatewayDevice.UserInterface.AutoUpdateServer type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="www.autoupdate.com" />
+		
+		<InternetGatewayDevice.UserInterface.BackgroundColor type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="FF0000" />
+		
+		<InternetGatewayDevice.UserInterface.ButtonColor type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="FF0000" />
+		
+		<InternetGatewayDevice.UserInterface.ButtonTextColor type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="FF0000" />
+		
+		<InternetGatewayDevice.UserInterface.ExampleLogin type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-40" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ExamplePassword type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-30" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ISPHelpDesk type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ISPHelpPage type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ISPHomePage type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ISPLogo type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-4095" defaultValue="" />
+		
+		<InternetGatewayDevice.UserInterface.ISPLogoSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-4095" defaultValue="0" />
+		
+		<InternetGatewayDevice.UserInterface.ISPMailServer type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="www.isp-mail.com" />
+		
+		<InternetGatewayDevice.UserInterface.ISPName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-32" defaultValue="ISP" />
+		
+		<InternetGatewayDevice.UserInterface.ISPNewsServer type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="www.news.com" />
+		
+		<InternetGatewayDevice.UserInterface.PasswordRequired type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.UserInterface.PasswordUserSelectable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.UserInterface.TextColor type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-6" defaultValue="FF0000" />
+		
+		<InternetGatewayDevice.UserInterface.UpgradeAvailable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+		
+		<InternetGatewayDevice.UserInterface.UserUpdateServer type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="www.userupdate.com" />
+		
+		<InternetGatewayDevice.UserInterface.WarrantyDate type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="2009-01-01T00:00:00" />
+		
+	</InternetGatewayDevice.UserInterface.>
+	
+	<InternetGatewayDevice.WANDevice. type="MultiObject" nextLevelNum="1">
+	
+		<InternetGatewayDevice.WANDevice.0. type="Instance" nextLevelNum="7" maxNumOfEntries="65535">
+		
+			<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig. type="Object" nextLevelNum="13">
+			
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection. type="MultiObject" nextLevelNum="1">
+				
+					<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection.0. type="Instance" nextLevelNum="2" maxNumOfEntries="65535">
+					
+						<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection.0.ActiveConnectionDeviceContainer type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection.0.ActiveConnectionServiceID type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection.0.>
+					
+				</InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Connection.>
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.EnabledForInternet type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Layer1DownstreamMaxBitRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="1000" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.Layer1UpstreamMaxBitRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="1000" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.MaximumActiveConnections type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="100" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.NumberOfActiveConnections type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.PhysicalLinkStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Down" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.TotalBytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.TotalBytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.TotalPacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.TotalPacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.WANAccessProvider type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="china" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.WANAccessType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Ethernet" />
+				
+			</InternetGatewayDevice.WANDevice.0.WANCommonInterfaceConfig.>
+			
+			<InternetGatewayDevice.WANDevice.0.WANConnectionDevice. type="MultiObject" nextLevelNum="1">
+			
+				<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0. type="Instance" nextLevelNum="8" maxNumOfEntries="65535">
+				
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics. type="Object" nextLevelNum="8">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.AverageResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.DiagnosticsState type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="None" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.FailureCount type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.MaximumResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.MinimumResponseTime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.NumberOfRepetitions type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="1" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.SuccessCount type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.Timeout type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-65535" defaultValue="10" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANATMF5LoopbackDiagnostics.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig. type="Object" nextLevelNum="19">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.AAL5CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMAAL type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="AAL1" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMEncapsulation type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="LLC" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMMaximumBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="1000" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMPeakCellRate type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="100" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMQoS type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="UBR" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMReceivedBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMSustainableCellRate type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="1000" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ATMTransmittedBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.AutoConfig type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.DestinationAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="PVC: VPI/VCI" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.FCSPreserved type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.LinkStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Down" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.LinkType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="PPPoE" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.ModulationType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="ADSL_G.dmt" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.VCSearchList type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="0/35" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANDSLLinkConfig.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANEthernetLinkConfig. type="Object" nextLevelNum="1">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANEthernetLinkConfig.EthernetLinkStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Down" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANEthernetLinkConfig.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection. type="MultiObject" nextLevelNum="1">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0. type="Instance" nextLevelNum="29" maxNumOfEntries="65535">
+						
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.AddressingType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="DHCP" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.AutoDisconnectTime type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ConnectionStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Unconfigured" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ConnectionTrigger type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="OnDemand" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ConnectionType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Unconfigured" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.DNSEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.DNSOverrideAllowed type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.DNSServers type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.DefaultGateway type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ExternalIPAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.IdleDisconnectTime type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.LastConnectionError type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="ERROR_NONE" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.MACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.MACAddressOverride type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.MaxMTUSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-1540" defaultValue="1540" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.NATEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Name type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping. type="MultiObject" nextLevelNum="1">
+							
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0. type="Instance" nextLevelNum="8" maxNumOfEntries="65535">
+								
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.ExternalPort type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.InternalClient type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.InternalPort type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.PortMappingDescription type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.PortMappingEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.PortMappingLeaseDuration type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.PortMappingProtocol type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="TCP" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.RemoteHost type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+								</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.0.>
+								
+							</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMapping.>
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PortMappingNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.PossibleConnectionTypes type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="connect" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.RSIPAvailable type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.RouteProtocolRx type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Off" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ShapingBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.ShapingRate type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats. type="Object" nextLevelNum="4">
+							
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats.EthernetBytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats.EthernetBytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats.EthernetPacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats.EthernetPacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+							</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Stats.>
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.SubnetMask type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.Uptime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.WarnDisconnectDelay type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+						</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.0.>
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnection.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANIPConnectionNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig. type="Object" nextLevelNum="12">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.DataCompression type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="V42bis" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.DataModulationSupported type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="V92" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.DataProtocol type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="V42_LAPM" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.DelayBetweenRetries type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.Fclass type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.ISPInfo type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="ISP" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.ISPPhoneNumber type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.LinkStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Down" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.LinkType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="PPP_Dialup" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.NumberOfRetries type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="10" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.PlusVTRCommandSupported type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPOTSLinkConfig.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection. type="MultiObject" nextLevelNum="1">
+					
+						<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0. type="Instance" nextLevelNum="38" maxNumOfEntries="65535">
+						
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.AutoDisconnectTime type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ConnectionStatus type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Unconfigured" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ConnectionTrigger type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="OnDemand" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ConnectionType type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Unconfigured" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.CurrentMRUSize type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="1-1540" defaultValue="1540" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.DNSEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.DNSOverrideAllowed type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.DNSServers type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ExternalIPAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.IdleDisconnectTime type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.LastConnectionError type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="ERROR_NONE" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.MACAddress type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.MACAddressOverride type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.MaxMRUSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="1-1540" defaultValue="1540" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.NATEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Name type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPAuthenticationProtocol type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="PAP" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPCompressionProtocol type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="None" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPEncryptionProtocol type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="None" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPLCPEcho type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="1-1540" defaultValue="1" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPLCPEchoRetry type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="1-1540" defaultValue="1" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPoEACName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PPPoEServiceName type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Password type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping. type="MultiObject" nextLevelNum="1">
+							
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0. type="Instance" nextLevelNum="8" maxNumOfEntries="65535">
+								
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.ExternalPort type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.InternalClient type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.InternalPort type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.PortMappingDescription type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.PortMappingEnabled type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.PortMappingLeaseDuration type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.PortMappingProtocol type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="TCP" />
+									
+									<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.RemoteHost type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="" />
+									
+								</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.0.>
+								
+							</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMapping.>
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PortMappingNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.PossibleConnectionTypes type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Unconfigured" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.RSIPAvailable type="Bool" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-1" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.RemoteIPAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.RouteProtocolRx type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Off" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ShapingBurstSize type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.ShapingRate type="Int" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="-1-65535" defaultValue="-1" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats. type="Object" nextLevelNum="4">
+							
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats.EthernetBytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats.EthernetBytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats.EthernetPacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+								<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats.EthernetPacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+								
+							</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Stats.>
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.TransportType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="PPPoA" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Uptime type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.Username type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-64" defaultValue="" />
+							
+							<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.WarnDisconnectDelay type="Unsigned" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+							
+						</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.0.>
+						
+					</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnection.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.WANPPPConnectionNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+					
+				</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.0.>
+				
+			</InternetGatewayDevice.WANDevice.0.WANConnectionDevice.>
+			
+			<InternetGatewayDevice.WANDevice.0.WANConnectionDeviceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+			
+			<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement. type="Object" nextLevelNum="2">
+			
+				<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService. type="MultiObject" nextLevelNum="1">
+				
+					<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0. type="Instance" nextLevelNum="6" maxNumOfEntries="65535">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.ConnectionType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Unconfigured" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.DestinationAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="PVC: VPI/VCI" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.LinkType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="PPP_Dialup" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.Name type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-32" defaultValue="" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.WANConnectionDevice type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.WANConnectionService type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.0.>
+					
+				</InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionService.>
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.ConnectionServiceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+				
+			</InternetGatewayDevice.WANDevice.0.WANDSLConnectionManagement.>
+			
+			<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics. type="Object" nextLevelNum="11">
+			
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.ACTATPds type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.ACTATPus type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.ACTPSDds type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.ACTPSDus type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.BITSpsds type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="100kbps" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.GAINSpsds type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="100kbps" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.HLINSCds type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.HLINpsds type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="100kbps" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.LoopDiagnosticsState type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="None" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.QLNpsds type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="100kbps" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.SNRpsds type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="100kbps" />
+				
+			</InternetGatewayDevice.WANDevice.0.WANDSLDiagnostics.>
+			
+			<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig. type="Object" nextLevelNum="31">
+			
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATUCANSIRev type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATUCANSIStd type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATUCCountry type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATUCVendor type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-8" defaultValue="tecom" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATURANSIRev type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATURANSIStd type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATURCountry type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ATURVendor type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-8" defaultValue="tecom" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.CurrentDayStart type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DataPath type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Interleaved" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DownstreamAttenuation type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DownstreamCurrRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="100" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DownstreamMaxRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DownstreamNoiseMargin type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.DownstreamPower type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.InterleaveDepth type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.LastShowtimeStart type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.LineEncoding type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="DMT" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.LineNumber type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="1-65536" defaultValue="1" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ModulationType type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="ADSL_G.dmt" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.QuarterHourStart type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="20" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.ShowtimeStart type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="10" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats. type="Object" nextLevelNum="5">
+				
+					<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay. type="Object" nextLevelNum="15">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.ATUCCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.ATUCFECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.ATUCHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.CellDelin type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.ErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.FECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.HECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.InitErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.InitTimeouts type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.LinkRetrain type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.LossOfFraming type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.ReceiveBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.SeverelyErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.TransmitBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.CurrentDay.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime. type="Object" nextLevelNum="15">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.ATUCCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.ATUCFECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.ATUCHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.CellDelin type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.ErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.FECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.HECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.InitErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.InitTimeouts type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.LinkRetrain type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.LossOfFraming type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.ReceiveBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.SeverelyErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.TransmitBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.LastShowtime.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour. type="Object" nextLevelNum="15">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.ATUCCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.ATUCFECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.ATUCHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.CellDelin type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.ErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.FECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.HECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.InitErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.InitTimeouts type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.LinkRetrain type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.LossOfFraming type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.ReceiveBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.SeverelyErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.TransmitBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.QuarterHour.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime. type="Object" nextLevelNum="15">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.ATUCCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.ATUCFECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.ATUCHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.CellDelin type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.ErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.FECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.HECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.InitErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.InitTimeouts type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.LinkRetrain type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.LossOfFraming type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.ReceiveBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.SeverelyErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.TransmitBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Showtime.>
+					
+					<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total. type="Object" nextLevelNum="15">
+					
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.ATUCCRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.ATUCFECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.ATUCHECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.CRCErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.CellDelin type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.ErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.FECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.HECErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.InitErrors type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.InitTimeouts type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.LinkRetrain type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.LossOfFraming type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.ReceiveBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.SeverelyErroredSecs type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+						<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.TransmitBlocks type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+						
+					</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.Total.>
+					
+				</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Stats.>
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="Disabled" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.TotalStart type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.UpstreamAttenuation type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.UpstreamCurrRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.UpstreamMaxRate type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="100" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.UpstreamNoiseMargin type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.UpstreamPower type="Int" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65536" defaultValue="0" />
+				
+			</InternetGatewayDevice.WANDevice.0.WANDSLInterfaceConfig.>
+			
+			<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig. type="Object" nextLevelNum="6">
+			
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.DuplexMode type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Half" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Enable type="Bool" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-1" defaultValue="0" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.MACAddress type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.MaxBitRate type="String" access="readWrite" notification="none" needReboot="no" accessList="subscriber" style="configuration" lengthRange="0-256" defaultValue="Auto" />
+				
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats. type="Object" nextLevelNum="4">
+				
+					<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats.BytesReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats.BytesSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats.PacketsReceived type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+					<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats.PacketsSent type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" valueRange="0-65535" defaultValue="0" />
+					
+				</InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Stats.>
+				
+				<InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.Status type="String" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="status" lengthRange="0-256" defaultValue="active" />
+				
+			</InternetGatewayDevice.WANDevice.0.WANEthernetInterfaceConfig.>
+			
+		</InternetGatewayDevice.WANDevice.0.>
+		
+	</InternetGatewayDevice.WANDevice.>
+	
+	<InternetGatewayDevice.WANDeviceNumberOfEntries type="Unsigned" access="readOnly" notification="none" needReboot="no" accessList="subscriber" style="configuration" valueRange="0-65535" defaultValue="0" />
+	
+</InternetGatewayDevice.>

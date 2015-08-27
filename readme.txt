@@ -55,7 +55,8 @@ HTTP客户端C语言API代码
 19、DB_MSG_ProcessManage
 共享内存数据库、消息通信、进程管理
 
-20、
+20、TR069_Client_Lib_CLI_DEMO
+tr069协议栈和调用demo
 
 注意:
 （1）后续，每个文件夹下都有readme，需要实时更新。
