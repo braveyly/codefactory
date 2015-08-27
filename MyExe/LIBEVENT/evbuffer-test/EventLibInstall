@@ -1,8 +1,0 @@
-1.Refer README to ./configure & make
-2.cp -r .libs ./eventlib
-3.export LD_LIBRARY_PATH=/home/nick/Libevent/libevent-2.0.17-stable/eventlib
-4.Touch Makefile
-	gcc test_evbuffer.c -I/libevent-2.0.17-stable/include -L/libevent-2.0.17-stable/eventlib -levent -levent_core -o main
-5.Touch test_evbuffer.c
-	#include <event2/util.h>
-	#include <event2/buffer.h>

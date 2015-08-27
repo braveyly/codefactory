@@ -49,6 +49,12 @@ makefile脚本的常规用法
 17、httpapi
 HTTP客户端C语言API代码
 
+18、InteligenceHomeSystem
+
+19、zwave
+
+20、
+
 注意:
 （1）后续，每个文件夹下都有readme，需要实时更新。
 （2）新代码，要考虑放入面试系列（7、Interview_FQA）、还是专题系列（12、SSSerial）、语言系列（3、CDoublePlusPrimer或4、cprogram）、还是系统编程（1、APUE）。
