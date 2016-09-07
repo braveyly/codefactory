@@ -1,4 +1,0 @@
-1. After make, this module will generate the libtpci.so, sched and app1(the client).
-2. For test, you should run sched first, then run the app1, next we can see the app1 commucate with the sched.
-3. You can modify the code in the ./test/exam.client to get your own application.
-4. You should be the super-user to do the above operation.

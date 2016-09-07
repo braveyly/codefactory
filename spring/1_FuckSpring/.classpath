@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aop-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aop-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aop-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aspects-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aspects-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-aspects-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-beans-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-beans-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-beans-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-support-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-support-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-context-support-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-core-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-core-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-core-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-expression-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-expression-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-expression-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-tomcat-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-tomcat-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-instrument-tomcat-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jdbc-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jdbc-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jdbc-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jms-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jms-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-jms-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-messaging-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-messaging-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-messaging-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-orm-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-orm-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-orm-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-oxm-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-oxm-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-oxm-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-test-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-test-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-test-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-tx-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-tx-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-tx-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-web-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-web-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-web-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-portlet-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-portlet-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-webmvc-portlet-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-websocket-4.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-websocket-4.2.2.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/spring/spring-framework-4.2.2.RELEASE-dist/spring-framework-4.2.2.RELEASE/libs/spring-websocket-4.2.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/workdata/Tomcat/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -27,11 +27,11 @@
 
 
 #include "conflib.h"
-#include <tcm_log.h>
+#include "tcm_log.h"
 /* print log to a file, if want stdout, please comment it */
 //#define   LOG_TO_FILE
 
-//#define   config_debug
+#define   config_debug
 
 #ifdef    config_debug
 
@@ -44,8 +44,8 @@
 #define    LOG_FILE         "/var/log/conflib.log"
 #endif
 
-#define      PARAMETER_FILE    "/home/nick/etc/os.conf"
-#define      DEFAULT_FILE      "/home/nick/etc/default.conf"
+#define      PARAMETER_FILE    "./os.conf"
+#define      DEFAULT_FILE      "./default.conf"
 
 #define      KEY_LOCK_CACHE_FILE   0x0f1e2d3c
 #define      KEY_SHARE_MEMORY      0xc3d2e1f0

@@ -10,10 +10,10 @@
 #  All information contained in this document is TECOM Corporation
 #  company private, proprietary, and trade secret.
 #***************************************************************************** 
-ROOTDIR=/home/nick/alllibs
-INSTALL_DIR=/home/nick/alllibs
-OBJ=configdata.o configapi.o 
-CFLAGS=-DTCM_LOG3 -fPIC -g -Wall -c  -I$(ROOTDIR)/include
+ROOTDIR=/home/nick/octopus
+INSTALL_DIR=/home/nick/octopus
+OBJ=configdata.o configapi.o logging.o timestamp.o eid.o
+CFLAGS=-DTCM_LOG3 -fPIC -g -Wall -c  -I$(ROOTDIR)/conflib/conflib/
 VERSION=1
 LIBNAME=libconfapi
 CC=gcc

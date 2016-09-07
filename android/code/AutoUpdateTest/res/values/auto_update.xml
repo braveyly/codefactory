@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="server_url">http://10.0.2.2:8081/update.xml</string>
+	<string name="bspatch_path">/mnt/sdcard/bspatch</string>
+	<string name="old_version_apk">/data/app/com.example.helloworld-1.apk</string>
+	<string name="new_version_apk">/mnt/sdcard/helloworld_new.apk</string>
+	<string name="new_version_patch">/mnt/sdcard/helloworld_patch.patch</string>
+	<string name="xml_path">/mnt/sdcard/update.xml</string>
+</resources>

@@ -1,0 +1,9 @@
+1 How to use
+pic_download.exe -s url
+pic_download.exe -m url1 url2 url3
+pic_download.exe -r 100 200 http://www.baidu.com/*.html
+
+2 Features
+v.1.0
+*Support 301 Moved
+*Support three methods to download pictures

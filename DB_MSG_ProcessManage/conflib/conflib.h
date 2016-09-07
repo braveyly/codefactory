@@ -25,8 +25,8 @@
 #ifndef __CONFLIB__H
 #define __CONFLIB__H
 
-#include <tcm.h>
-#include <tcm_eid.h>
+#include "tcm.h"
+#include "tcm_eid.h"
 #define      MAX_NAME_LEN   240 /* the MAX length of parameter name */
 #define      MAX_VALUE_LEN  640 /* the MAX length of parameter value */
 

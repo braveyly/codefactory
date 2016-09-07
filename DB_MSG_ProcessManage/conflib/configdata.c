@@ -21,7 +21,7 @@ Histroy:
 
     2.
 ***********************************************************************/
-
+#if 0
 #include <stdio.h>
 
 #include "conflib.h"
@@ -82,4 +82,4 @@ int update_config_file ( void )
     return 0;
 }
 
-
+#endif

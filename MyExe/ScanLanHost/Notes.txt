@@ -1,0 +1,14 @@
+The program basic mechanism is that lan hosts are scanned by ICMP tests.
+
+About how to get the mac info of online hosts.
+1)arp -a
+however this method is not very efficient.
+2)through the third library like winpcap
+it is not deserved to do like this
+
+The differences between windows and linux platform are :
+1)ioctrl routine can supply the arp table info in linux. This is no API way to access arp table in windows.
+2)the SOCK_PACKET type packet can access the phisical layer packet including arp packet in linux,
+but no SOCK_PACKET type exists in windows, it has to use the third library to send/receive arp packet.
+
+

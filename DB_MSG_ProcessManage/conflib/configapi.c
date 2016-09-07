@@ -33,9 +33,9 @@
 #include <sys/shm.h>
 
 #include "configapi.h"
-#include <tcm.h>
-#include <tcm_eid.h>
-#include <tcm_util.h>
+#include "tcm.h"
+#include "tcm_eid.h"
+//#include <tcm_util.h>
 
 /* If this marco is defined, the table group parameter is saved id sensitivity
  * otherwise the conflib will assign the table id automatically
@@ -74,8 +74,28 @@ union semun
 #endif
 
 /********************** Functions ************************************/
+SINT32 tcmUtl_strcmp(const char *s1, const char *s2)
+{
+   char emptyStr = '\0';
+   char *str1 = (char *) s1;
+   char *str2 = (char *) s2;
 
-int update_config_file ( void );
+   if (str1 == NULL)
+   {
+      str1 = &emptyStr;
+   }
+   if (str2 == NULL)
+   {
+      str2 = &emptyStr;
+   }
+
+   return strcmp(str1, str2);
+}
+
+int update_config_file ( void )
+{
+    return 0;
+}
 
 
 /***********************************************************************
@@ -270,7 +290,26 @@ int init_cache_lock ( void )
     return 0;
 }
 
-
+int uninit_cache_lock()
+{
+    int sem = 0;
+    union semun arg;
+    int ret = 0;
+    sem = get_sem_id();
+    if( -1 == sem )
+    {
+        CFG_DEBUG ( log_file, "Failed to get sem id:%s\n", strerror( errno ) );
+        return -1;
+    }
+    arg.val = 1;
+    ret = semctl( sem, 0, IPC_RMID, arg );
+    if( ret < 0 )
+    {
+        CFG_DEBUG( log_file, "Failed to remove sem:%s\n", strerror( errno ) );
+        return -1;
+    }
+    return 0;
+}
 /***********************************************************************
 Function: get_sem_id
 Description: get the share memory lock
@@ -324,6 +363,7 @@ Histroy:
 ************************************************************************/
 int lock_cache ( int sem )
 {
+#if 1
     struct  sembuf ops[1];
 
     ops[0].sem_num = 0;
@@ -335,7 +375,7 @@ int lock_cache ( int sem )
         CFG_DEBUG ( log_file, "sem_op:%s\n", strerror ( errno ) );
         return -1;
     }
-
+#endif
     return 0;
 }
 
@@ -360,6 +400,7 @@ Histroy:
 ************************************************************************/
 int unlock_cache ( int sem )
 {
+#if 1
     struct  sembuf ops[1];
 
     ops[0].sem_num = 0;
@@ -371,7 +412,7 @@ int unlock_cache ( int sem )
         CFG_DEBUG ( log_file, "sem_op:%s\n", strerror ( errno ) );
         return -1;
     }
-
+#endif
     return 0;
 }
 
@@ -1092,6 +1133,7 @@ Histroy:
 ************************************************************************/
 int check_library ( void* baseaddr )
 {
+#if 0
     if ( !baseaddr )
     {
         return -1;
@@ -1106,7 +1148,7 @@ int check_library ( void* baseaddr )
         CFG_DEBUG ( log_file, "Magic number error, cache destory\n" );
         return -1;
     }
-
+#endif
     return 0;
 }
 
@@ -2078,6 +2120,7 @@ int config_api_init_library ( void )
     if ( lock_cache ( sem ) < 0 )
     {
         CFG_DEBUG ( log_file, "lock cache error\n" );
+        uninit_cache_lock();
         return -1;
     } 
     
@@ -2087,6 +2130,7 @@ int config_api_init_library ( void )
         CFG_DEBUG ( log_file, "mmap is already inited, no need to call me\n" );
         //unlock befor return ,or blocked, add by nick
         unlock_cache ( sem );
+        uninit_cache_lock();
         return 0;
     }
 
@@ -2101,7 +2145,17 @@ int config_api_init_library ( void )
         CFG_DEBUG ( log_file, "The first time to init paramter table\n" );
         int a = init_library();
         unlock_cache ( sem );
+        uninit_cache_lock();
         return a;
+    }
+
+    int b = init_library();
+    if(b<0)
+    {
+        CFG_DEBUG( log_file, "Failed to init library!");
+        unlock_cache( sem );
+        uninit_cache_lock();
+        return b;
     }
 
     shm_id = shmget ( KEY_SHARE_MEMORY, gMMAPSIZE, IPC_CREAT | 0666 );
@@ -2109,9 +2163,11 @@ int config_api_init_library ( void )
     {
         CFG_DEBUG ( log_file, "shmget error.\n" );
         unlock_cache ( sem );
+        uninit_cache_lock();
         return -1;
     }
 
+#if 0
     buf = shmat ( shm_id, NULL, 0 );
     if ( buf == ( void * ) ( -1 ) )
     {
@@ -2119,15 +2175,17 @@ int config_api_init_library ( void )
         unlock_cache ( sem );
         return -1;
     }
-
-    if ( check_library ( buf ) )
+#endif
+#if 1
+    if ( check_library ( cache_addr ) )
     {
         unlock_cache ( sem );
+        uninit_cache_lock();
         return -1;
     }
-
+#endif
     CFG_DEBUG ( log_file, "config_api_init_library success\n" );
-    cache_addr = buf;
+    //cache_addr = buf;
     unlock_cache ( sem );
     return  0;
 }
@@ -2166,6 +2224,7 @@ void config_api_uninit_library ( void )
 #ifdef   config_debug
     close_logger();
 #endif
+    uninit_cache_lock();
 }
 
 
