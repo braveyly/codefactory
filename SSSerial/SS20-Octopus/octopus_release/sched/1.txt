@@ -1,0 +1,2 @@
+cc -fPIC -g -Wall -c -I./ -I/home/nick/octopus/include -I/home/nick/octopus/liboal/liboal -I/home/nick/octopus/libmsg/libmsg -DTCM_LOG3 interest.c
+cc -fPIC -g -Wall -c -I./ -I/home/nick/octopus/include -I/home/nick/octopus/liboal/liboal -I/home/nick/octopus/libmsg/libmsg -DTCM_LOG3 interest.c
