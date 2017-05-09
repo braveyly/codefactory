@@ -40,35 +40,33 @@ makefile脚本的常规用法
 14、UnixSocket1
 《Unix网络编程：socket套接字编程》，主要是socket编程的一些技巧
 
-15、docs
-鉴于google code空间有2G，正式将文档加入根目录下
-
-16、AutoGtest
+15、AutoGtest
 自动化单元测试代码
 
-17、httpapi
+16、httpapi
 HTTP客户端C语言API代码
 
-18、InteligenceHomeSystem
+17、InteligenceHomeSystem
 智能家居代码
 
-19、DB_MSG_ProcessManage
+18、DB_MSG_ProcessManage
 共享内存数据库、消息通信、进程管理
 
-20、TR069_Client_Lib_CLI_DEMO
+19、TR069_Client_Lib_CLI_DEMO
 tr069协议栈和调用demo
 
-21、增加autoit实例的源码
+20、增加autoit实例的源码
 AutoIt
 
-22、Spring
+21、Spring
 java后台开发
 
-23、Weather
+22、Weather
 高仿墨迹天气安卓app源码
 
 注意:
 （1）后续，每个文件夹下都有readme，需要实时更新。
 （2）新代码，要考虑放入面试系列（7、Interview_FQA）、还是专题系列（12、SSSerial）、语言系列（3、CDoublePlusPrimer或4、cprogram）、还是系统编程（1、APUE）。
 （3）进程间通信代码（1、APUE）和socket编程代码（14、UnixSocket1）是APUE的子集。
+（4）删除docs，以百度网盘为主
 
